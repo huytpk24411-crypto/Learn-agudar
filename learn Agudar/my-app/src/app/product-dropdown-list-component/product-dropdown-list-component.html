@@ -1,0 +1,12 @@
+<p>product-dropdown-list-component works!</p>
+<select>
+    @for (p of products; track p.id) {
+        <option [value]="p.id">{{p.name}}</option>
+    }
+</select>
+<h3>Way 2</h3>
+<select>
+    @for (p of products; track p.id) {
+        <option [value]="p.id">{{p.name}}</option>
+    }
+</select>

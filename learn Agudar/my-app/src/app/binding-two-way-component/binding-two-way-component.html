@@ -1,0 +1,23 @@
+﻿<p>binding-two-way-component works!</p>
+<form (ngSubmit)="giaiPt2()">
+  <table>
+    <tr><td colspan="2">Phương trình bậc 2</td></tr>
+    <tr>
+      <td><label for="hsa">Hệ số a:</label></td>
+      <td><input id="hsa" name="hsa" type="number" step="any" [(ngModel)]="hsa"></td>
+    </tr>
+    <tr>
+      <td><label for="hsb">Hệ số b:</label></td>
+      <td><input id="hsb" name="hsb" type="number" step="any" [(ngModel)]="hsb"></td>
+    </tr>
+    <tr>
+      <td><label for="hsc">Hệ số c:</label></td>
+      <td><input id="hsc" name="hsc" type="number" step="any" [(ngModel)]="hsc"></td>
+    </tr>
+    <tr><td>Kết quả:</td><td aria-live="polite">{{ ketqua }}</td></tr>
+    <tr><td colspan="2">
+      <button type="submit">Giải phương trình</button>
+      <button type="button" (click)="phuongTrinhMoi()">Phương trình mới</button>
+    </td></tr>
+  </table>
+</form>

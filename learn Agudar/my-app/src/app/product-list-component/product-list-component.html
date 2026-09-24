@@ -1,0 +1,24 @@
+<h2>Danh sách sản phẩm</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mã</th>
+      <th>Tên sản phẩm</th>
+      <th>Giá</th>
+      <th>Ảnh</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (product of products; track product.id) {
+      <tr>
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>
+          <img [src]="product.image" [alt]="product.name" width="120" />
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

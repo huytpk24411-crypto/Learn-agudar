@@ -1,0 +1,49 @@
+[
+  {
+    "CustomerTypeId": 1,
+    "CustomterTypeName": "VIP",
+    "Customers": [
+      {
+        "Id": "Cus123",
+        "Name": "Nezuko Kamado",
+        "Email": "nezuko.kamado@example.com",
+        "Age": 14,
+        "Image": "assets/avatars/a226759ca595fff34624127de2349734.png"
+      },
+      {
+        "Id": "Cus456",
+        "Name": "Rem",
+        "Email": "rem@example.com",
+        "Age": 17,
+        "Image": "assets/avatars/bang-xep-hang-top-20-nhan-vat-nu-anime-xinh-dep-nhat-1_UJXS.webp"
+      },
+      {
+        "Id": "Cus789",
+        "Name": "Emilia",
+        "Email": "emilia@example.com",
+        "Age": 18,
+        "Image": "assets/avatars/bang-xep-hang-top-20-nhan-vat-nu-anime-xinh-dep-nhat-9_LKEN.webp"
+      }
+    ]
+  },
+  {
+    "CustomerTypeId": 2,
+    "CustomterTypeName": "Normal",
+    "Customers": [
+      {
+        "Id": "Cus000",
+        "Name": "Shinobu Kocho",
+        "Email": "shinobu.kocho@example.com",
+        "Age": 18,
+        "Image": "assets/avatars/OIP (1).jpg"
+      },
+      {
+        "Id": "Cus111",
+        "Name": "Violet Evergarden",
+        "Email": "violet.evergarden@example.com",
+        "Age": 14,
+        "Image": "assets/avatars/OIP.jpg"
+      }
+    ]
+  }
+]

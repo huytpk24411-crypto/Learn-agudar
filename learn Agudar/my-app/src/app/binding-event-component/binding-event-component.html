@@ -1,0 +1,37 @@
+﻿<p>binding-event-component works!</p>
+<table>
+    <tr>
+        <td colspan="2">
+            Phuong trinh bac 1
+        </td>
+    </tr>
+    <tr>
+        <td>
+            He so a:
+        </td>
+        <td>
+            <input type="number" [value]="hsa" #inputA>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            He so b:
+        </td>
+        <td>
+            <input type="number" [value]="hsb" #inputB>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Ket qua:
+        </td>
+        <td id="tdketqua" #view>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button (click)="giaiPt(inputA.valueAsNumber, inputB.valueAsNumber, view)">Giai</button>
+            <button (click)="inputA.value = hsa.toString(); inputB.value = hsb.toString(); view.textContent = ''">Phuong trinh moi</button>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,29 @@
+<p>catalog-product works!</p>
+<table border="1"> 
+    <tr> 
+        <td colspan="2">Ma Danh Muc</td> 
+        <td colspan="2">Ten Danh Muc</td> 
+    </tr> 
+    <ng-container *ngFor="let c of categories"> 
+        <tr> 
+            <td colspan="2">{{c.Cateid}}</td> 
+            <td colspan="2">{{c.CateName}}</td> 
+        </tr> 
+        <tr>
+            <td>Ma San Pham</td>
+            <td>Ten San Pham</td>
+            <td>Gia San Pham</td>
+            <td>Picture</td>
+        </tr>
+        <ng-container *ngFor="let p of c.Products"> 
+            <tr> 
+                <td>{{p.ProductId}}</td> 
+                <td>{{p.ProductName}}</td> 
+                <td>{{p.Price | number:'1.0-0'}} đ</td>
+                <td> 
+                    <img [src]="p.Image" [alt]="p.ProductName">
+                </td> 
+            </tr>
+        </ng-container>
+    </ng-container>
+</table> 
